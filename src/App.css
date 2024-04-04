@@ -1,0 +1,72 @@
+#root {
+  margin: 0;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background: url(./assets/under-water.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
+h1 {
+  color: aliceblue;
+  font-size: 3.2em;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.main-view {
+  display: flex;
+  align-items: center;
+}
+
+.info-box {
+  background-color: rgb(240, 248, 255, 0.5);
+  padding: 50px;
+  margin: 80px 100px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.button {
+  background-color: rgb(186, 218, 246);
+  padding: 5px;
+  border: 2px double gray;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(209, 228, 245);
+} 
+
+.crab {
+  height: 40px
+}
