@@ -1,8 +1,5 @@
 #root {
-  margin: 0;
-  width: 100%;
-  padding: 2rem;
-  text-align: center;
+  padding: 20px;
 }
 
 body {
@@ -12,22 +9,31 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
-  display: flex;
-  place-items: center;
 }
 
 h1 {
-  color: aliceblue;
-  font-size: 3.2em;
-  margin: 0;
+  color: #f0f8ff;
+  font-family: "Pacifico", cursive;
+  font-size: 2.5em;
+  margin: 0 5px 0 0;
 }
 
 h2 {
-  margin: 0;
+  font-family: "Caveat", cursive;
+  margin: 5px 0 0;
 }
 
 p {
+  font-family: "Quicksand", sans-serif;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .nav-bar {
@@ -37,24 +43,61 @@ p {
   gap: 25px;
 }
 
-.main-view {
+.headline {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-view {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .info-box {
   background-color: rgb(240, 248, 255, 0.5);
-  padding: 50px;
-  margin: 80px 100px;
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  padding: 30px;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
+.seagull {
+  transform: rotateY(180deg);
+  width: 66px;
+  order: -1;
+  align-self: flex-end;
+  grid-column-start: 7;
+  position: relative;
+  bottom: -15px;
+  right: 10px;
+}
+
+.sign-up-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  margin-top: 20px;
+}
+
 .button {
-  background-color: rgb(186, 218, 246);
-  padding: 5px;
+  background: linear-gradient(to left top, aliceblue, rgba(0, 162, 255, 0.047));
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  padding: 5px 10px 5px 5px;
   border: 2px double gray;
   border-radius: 25px;
   display: flex;
@@ -64,9 +107,93 @@ p {
 }
 
 .button:hover {
-  background-color: rgb(209, 228, 245);
+  background-color: rgb(114, 187, 251);
 } 
 
 .crab {
   height: 40px
+}
+
+.photo {
+  box-shadow: 5px 5px 10px 15px rgba(40, 40, 40, 0.83);
+  max-width: 350px;
+  height: 200px;
+  object-fit: cover;
+  object-position: left;
+  margin-top: 30px;
+  grid-column-start: 8;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  order: 5;
+}
+
+.rubik-scribble-regular {
+  font-family: "Rubik Scribble", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3.2em;
+  }
+
+  .headline h2 {
+    margin: 0;
+  }
+
+  .main-view {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .sign-up-box {
+    align-items: flex-start;
+  }
+  
+  .seagull {
+    align-self: flex-start;
+    right: 80px;
+    bottom: 50px;
+    order: 1;
+  }
+
+  .photo {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 3.2em;
+  }
+
+  .nav-bar {
+    height: 100px;
+  }
+
+  .headline {
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .main-view {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .sign-up-box {
+    align-items: flex-start;
+  }
+
+  .seagull {
+    align-self: flex-start;
+    right: 80px;
+    bottom: 50px;
+    order: 1;
+  }
 }

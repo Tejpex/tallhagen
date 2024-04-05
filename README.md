@@ -1,8 +1,5 @@
-# React + Vite
+# Tallhagen scout
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a site displaying information about the upcoming camp for a scoutgroup in Kalmar. The visitors can read about the camp and sign up.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It is made using React Vite because I wanted to practise using React. In the future I might set up more component and use routes to display different types of information on different pages.
