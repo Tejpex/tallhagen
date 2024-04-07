@@ -94,7 +94,7 @@ mark {
   align-items: center;
   grid-column-start: 8;
   grid-column-end: 11;
-  grid-row-start: 3;
+  grid-row-start: 4;
   grid-row-end: 5;
   margin-top: 20px;
 }
@@ -125,7 +125,7 @@ mark {
   max-width: 350px;
   height: 200px;
   object-fit: cover;
-  object-position: left;
+  object-position: left top;
   margin-top: 30px;
   grid-column-start: 8;
   grid-column-end: 12;
