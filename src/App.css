@@ -32,8 +32,9 @@ a {
   text-decoration: none;
 }
 
-.bold {
+mark {
   font-weight: 600;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .same-row {
