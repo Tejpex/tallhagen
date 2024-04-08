@@ -32,13 +32,13 @@ export const Info = () => {
       </p>
       <h2>När anmäler jag mig?</h2>
       <p>
-        Redan nu! Men senast <mark>torsdag den 9 maj.</mark>
+        Redan nu! Men senast <mark>torsdag den 9 maj.</mark> Detta datum ska också betalningen ha kommit in.
       </p>
       {/*<p>Sista avanmälningsdag är 23 maj.</p>*/}
       <h2>Hjälp</h2>
       <p>
         <mark>Scouter gör saker tillsammans!</mark> Planeringen är i full gång, men vi har alltid behov av fler händer som kan hjälpa till innan, efter eller under lägret. Vill du bidra med något? Hör av dig till en ledare, så kan vi berätta mer om vilka arbetsuppgifter som finns. <br />
-        Vi kommer också be varje familj med en deltagande scout att hjälpa till med något under lägrets gång. Mer information om detta finns i anmälningsformuläret. Tack på förhand!
+        Vi kommer också be er föräldrar till anmälda barn att hjälpa till med något under lägrets gång. Mer information om detta finns i anmälningsformuläret. Tack på förhand!
       </p>
     </div>
   )
