@@ -15,7 +15,10 @@ export const Info = () => {
       <h2>När?</h2>
       <p>6-9 juni 2024</p>
       <h2>Var?</h2>
-      <p>Varvet på Skäggenäs -<a href="https://maps.app.goo.gl/TU6w9eTrMSqpfdjD8">Karta</a></p>
+      <p>
+        Varvet på Skäggenäs -
+        <a href="https://maps.app.goo.gl/TU6w9eTrMSqpfdjD8" target="blank">Karta</a>
+      </p>
       <h2>För vem?</h2>
       <p>
         <mark>Upptäckare, äventyrare, utmanare, roverscouter och ledare</mark> -
@@ -32,10 +35,13 @@ export const Info = () => {
         <mark>Ledare/funktionär:</mark> Gratis, som tack för att du hjälper
         till.
       </p>
+      <p>
+        Betalning sker till Tallhagens Swishnr 123 084 55 94. Märk inbetalningen
+        med barnets namn och avdelning. Sista betalningsdag 15 maj.
+      </p>
       <h2>När anmäler jag mig?</h2>
       <p>
-        Redan nu! Men senast <mark>torsdag den 9 maj.</mark> Detta datum ska
-        också betalningen ha kommit in.
+        Redan nu! Men senast <mark>torsdag den 9 maj.</mark> 
       </p>
       {/*<p>Sista avanmälningsdag är 23 maj.</p>*/}
       <h2>Hjälp</h2>
@@ -49,5 +55,5 @@ export const Info = () => {
         anmälningsformuläret. Tack på förhand!
       </p>
     </div>
-  );
+  )
 }

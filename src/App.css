@@ -16,11 +16,12 @@ h1 {
   font-family: "Quicksand", sans-serif;
   font-size: 2.5em;
   margin: 0 5px 0 0;
+  text-shadow: rgb(0, 0, 0) 1px 1px 3px;
 }
 
 h2 {
   font-family: "Caveat", cursive;
-  margin: 5px 0 0;
+  margin: 0;
 }
 
 p {
@@ -75,6 +76,7 @@ mark {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 5px;
 }
 
 .seagull {
