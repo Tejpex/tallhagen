@@ -1,0 +1,12 @@
+.item-box {
+    display: flex;
+}
+
+.item {
+    display: flex;
+}
+
+.delete-icon {
+    height: 10px;
+    width: 10px;
+}
