@@ -14,7 +14,7 @@ export const PackList = () => {
     )
   } else {
     return (
-      <div className="item-list">
+      <div className="info-box">
         <h2>Packning</h2>
         <p>
         Packa alltid kläder efter årstid – man ska kunna vara ute i alla väder

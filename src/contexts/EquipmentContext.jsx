@@ -46,34 +46,110 @@ export const EquipmentProvider = ({ children }) => {
       done: false,
       category: "Kläder",
     },
-
-
-    /* 
-        <li>T-shirts/ Linnen eller liknande</li>
-        <li>Tjockare tröjor</li>
-        <li>Jacka efter årstid</li>
-        <li>Regnjacka</li>
-        <li>Regnbyxor</li>
-        <li>Vantar</li>
-        <li>Mössa</li>
-      </ul>
-      <ul> Äta
-        <li>Kåsa/mugg</li>
-        <li>Djup tallrik</li>
-        <li>Bestick</li>
-        <li>Diskhandduk</li>
-        <li>Vattenflaska med vatten</li>
-      </ul>
-      <ul> Hygien
-        <li>Tandborste</li>
-        <li>Tandkräm</li>
-        <li>Kam/Hårborste</li>
-        <li>Tvål</li>
-  <li>Liten handduk</li>*/
-
- 
+    {
+      id: 8,
+      name: "T-shirts/ Linnen eller liknande",
+      done: false,
+      category: "Kläder",
+    },
+    {
+      id: 9,
+      name: "Tjockare tröjor",
+      done: false,
+      category: "Kläder",
+    },
+    {
+      id: 10,
+      name: "Jacka efter årstid",
+      done: false,
+      category: "Kläder",
+    },
+    {
+      id: 11,
+      name: "Regnjacka",
+      done: false,
+      category: "Kläder",
+    },
+    {
+      id: 12,
+      name: "Regnbyxor",
+      done: false,
+      category: "Kläder",
+    },
+    {
+      id: 13,
+      name: "Vantar",
+      done: false,
+      category: "Kläder",
+    },
+    {
+      id: 14,
+      name: "Mössa",
+      done: false,
+      category: "Kläder",
+    },
+    {
+      id: 15,
+      name: "Kåsa/mugg",
+      done: false,
+      category: "Äta",
+    },
+    {
+      id: 16,
+      name: "Djup tallrik",
+      done: false,
+      category: "Äta",
+    },
+    {
+      id: 17,
+      name: "Bestick",
+      done: false,
+      category: "Äta",
+    },
+    {
+      id: 18,
+      name: "Diskhandduk",
+      done: false,
+      category: "Äta",
+    },
+    {
+      id: 19,
+      name: "Vattenflaska med vatten",
+      done: false,
+      category: "Äta",
+    },
+    {
+      id: 20,
+      name: "Tandborste",
+      done: false,
+      category: "Hygien",
+    },
+    {
+      id: 21,
+      name: "Tandkräm",
+      done: false,
+      category: "Hygien",
+    },
+    {
+      id: 22,
+      name: "Kam/Hårborste",
+      done: false,
+      category: "Hygien",
+    },
+    {
+      id: 23,
+      name: "Tvål",
+      done: false,
+      category: "Hygien",
+    },
+    {
+      id: 24,
+      name: "Liten handduk",
+      done: false,
+      category: "Hygien",
+    },
   ])
-  const [nextId, setNextId] = useState(1)
+  const [nextId, setNextId] = useState(25)
 
   const addItem = (newItem) => {
     setEquipment((prevEquipment) => [...prevEquipment, newItem])
