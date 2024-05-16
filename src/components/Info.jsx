@@ -5,7 +5,7 @@ export const Info = () => {
     <div className="info-box">
       <p className="bold">
         <mark>
-          Nu är det dags att dyka ner under ytan med Tallhagens Scoutkår!
+        Nu är det dags att dyka ner under ytan med Tallhagens Scoutkår!
         </mark>{" "}
         <br />
         Årets sommarläger har temat &quot;Den lilla sjöjungfrun&quot;, så häng
