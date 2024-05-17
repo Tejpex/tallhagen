@@ -1,12 +1,20 @@
+import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import mermaidIcon from "/mermaid-color.png"
 
 export const NavBar = () => {
   return (
     <div className="nav-bar">
-        <img src={mermaidIcon} alt="Icon of mermaid" />
+        <Link to="/"><img src={mermaidIcon} alt="Icon of mermaid" /></Link>
         <div className="headline">
-          <h1>Sommarläger 2024</h1>
-          <h2>med Tallhagens Scoutkår</h2>
+          <div className="head-text">
+            <h1>Sommarläger 2024</h1>
+            <h2>med Tallhagens Scoutkår</h2>
+          </div>
+          <nav className="links">
+            <NavLink className="link" to="/">Information</NavLink>
+            <NavLink className="link" to="/packning">Packning</NavLink>
+          </nav>
         </div>
     </div>
   )

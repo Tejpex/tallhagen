@@ -31,7 +31,8 @@ export const PackList = () => {
           som gäller – kläder som går att smutsa ner och är fria att leka och
           röra sig i.
         </p>
-        <h3>Här är en packlista som du kan följa.</h3>
+        <h3>Här är en packlista som du kan följa:</h3>
+        <p className="site-info">Du kan markera sakerna allt eftersom du packar dem. Möjligheten finns också att ta bort och lägga till saker för att göra listan personlig. Dina ändringar sparas dock inte. Vill du göra det behöver du skriva ut listan.</p>
         <h4>Sova</h4>
         {equipment
           .filter((item) => item.done === false && item.category === "Sova")
