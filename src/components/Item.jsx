@@ -26,11 +26,9 @@ export const Item = ({ item }) => {
         </label>
         <p>{item.name}</p>
       </div>
-      <div className="task-end">
-        <button className="button" onClick={() => deleteItem(item.id)}>
-          <img className="delete-icon" src={deleteIcon} alt="Delete icon" />
-        </button>
-      </div>
+      <button className="delete-button" onClick={() => deleteItem(item.id)}>
+        <img className="delete-icon" src={deleteIcon} alt="Delete icon" />
+      </button>
     </div>
   )
 }
