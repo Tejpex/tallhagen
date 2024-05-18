@@ -29,7 +29,7 @@ export const PackList = () => {
           Packa alltid kläder efter årstid – man ska kunna vara ute i alla väder
           utan att frysa eller bli blöt. Tänk också på att det är oömma kläder
           som gäller – kläder som går att smutsa ner och är fria att leka och
-          röra sig i. <mark>Märk alla dina kläder och saker med namn!</mark>
+          röra sig i.<br/> <mark>Märk alla dina kläder och saker med namn!</mark>
         </p>
         <h3>Här är en packlista som du kan följa:</h3>
         <p className="site-info">Du kan markera sakerna allt eftersom du packar dem. Möjligheten finns också att ta bort och lägga till saker för att göra listan personlig. Dina ändringar sparas dock inte. Vill du göra det behöver du skriva ut listan.</p>
