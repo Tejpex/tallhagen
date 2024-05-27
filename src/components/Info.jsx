@@ -3,7 +3,7 @@
 export const Info = () => {
   return (
     <div className="info-box">
-      <p className="bold">
+      <p>
         <mark>
         Nu är det dags att dyka ner under ytan med Tallhagens Scoutkår!
         </mark>{" "}
