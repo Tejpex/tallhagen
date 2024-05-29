@@ -1,11 +1,11 @@
-
+import { Link } from "react-router-dom";
 
 export const Info = () => {
   return (
     <div className="info-box">
       <p>
         <mark>
-        Nu är det dags att dyka ner under ytan med Tallhagens Scoutkår!
+          Nu är det dags att dyka ner under ytan med Tallhagens Scoutkår!
         </mark>{" "}
         <br />
         Årets sommarläger har temat &quot;Den lilla sjöjungfrun&quot;, så häng
@@ -17,7 +17,9 @@ export const Info = () => {
       <h2>Var?</h2>
       <p>
         Varvet på Skäggenäs -
-        <a href="https://maps.app.goo.gl/TU6w9eTrMSqpfdjD8" target="blank">Karta</a>
+        <a href="https://maps.app.goo.gl/TU6w9eTrMSqpfdjD8" target="blank">
+          Karta
+        </a>
       </p>
       <h2>För vem?</h2>
       <p>
@@ -27,11 +29,26 @@ export const Info = () => {
         <mark>Familjescouter</mark> - lördag eftermiddag
       </p>
       <h2>Vad blir det för mat?</h2>
-      <p>Exempel på mat som kommer serveras: Pastasallad, hamburgare, pyttipanna, fiskgryta, spagetti och köttfärssås.</p>
+      <p>
+        Exempel på mat som kommer serveras: Pastasallad, hamburgare, pyttipanna,
+        fiskgryta, spagetti och köttfärssås.
+      </p>
+      <h2>Vad ska jag ta med mig?</h2>
+      <p>
+        <Link className="link" to="/packning">Här </Link> 
+        finns en packlista du kan följa.
+      </p>
       <h2>Hjälp</h2>
       <p>
-        <mark>Scouter gör saker tillsammans!</mark> Alla anmälda scouters föräldrar har tilldelats en eller flera arbetsuppgifter att hjälpa till med innan, under eller efter lägret. Har du en scout anmäld, men fick inget mail? Hör av dig till en ledare!<br />Ska du inte med på lägret, men vill bidra ändå? Hör av dig till en ledare, så kan vi berätta mer om vilka arbetsuppgifter som finns. Tack på förhand!
+        <mark>Scouter gör saker tillsammans!</mark> Alla anmälda scouters
+        föräldrar har tilldelats en eller flera arbetsuppgifter att hjälpa till
+        med innan, under eller efter lägret. Har du en scout anmäld, men fick
+        inget mail? Hör av dig till en ledare!
+        <br />
+        Ska du inte med på lägret, men vill bidra ändå? Hör av dig till en
+        ledare, så kan vi berätta mer om vilka arbetsuppgifter som finns. Tack
+        på förhand!
       </p>
     </div>
-  )
-}
+  );
+};
