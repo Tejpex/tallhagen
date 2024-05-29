@@ -1,25 +1,9 @@
 
 
-export const Info = () => {
+export const InfoAboutSignUp = () => {
   return (
     <div className="info-box">
-      <p>
-        <mark>
-        Nu är det dags att dyka ner under ytan med Tallhagens Scoutkår!
-        </mark>{" "}
-        <br />
-        Årets sommarläger har temat &quot;Den lilla sjöjungfrun&quot;, så häng
-        med Sebastian och gänget, ta med dina scoutkompisar och upptäck att 🎶
-        havet är djupt, havet är djupt... 🎵
-      </p>
-      <h2>När?</h2>
-      <p>6-9 juni 2024</p>
-      <h2>Var?</h2>
-      <p>
-        Varvet på Skäggenäs -
-        <a href="https://maps.app.goo.gl/TU6w9eTrMSqpfdjD8" target="blank">Karta</a>
-      </p>
-      <h2>För vem?</h2>
+      <h2>Vem får vara med?</h2>
       <p>
         <mark>Upptäckare, äventyrare, utmanare, roverscouter och ledare</mark> -
         tors-sön <br />
@@ -41,7 +25,7 @@ export const Info = () => {
       </p>
       <h2>När anmäler jag mig?</h2>
       <p>
-        Redan nu! Men senast <mark>torsdag den 9 maj.</mark> 
+        Senast <mark>torsdag den 9 maj.</mark>
       </p>
       {/*<p>Sista avanmälningsdag är 23 maj.</p>*/}
       <h2>Hjälp</h2>
@@ -55,5 +39,5 @@ export const Info = () => {
         anmälningsformuläret. Tack på förhand!
       </p>
     </div>
-  )
+  );
 }
