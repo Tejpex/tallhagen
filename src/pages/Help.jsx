@@ -69,9 +69,23 @@ export const Help = () => {
             <br />
             Ansvarig transport: Angelica
           </p>
-          <p>5 - Med på läger Illse/Ines -
-          spårare/Upptäckare Lördag Hjälpa till med vad som Alexander - spårare
-          Fre-sön behövs Valentin - spårare fredag 0900 Elton G - spårare
+          <table>
+            <tr>
+              <td>Namn</td>
+              <td>Antal</td>
+              <td>Vem</td>
+              <td>Ant.</td>
+            </tr>
+            <tr>
+              <td>5 - Med på läger</td>
+              <td>-</td>
+              <td>Illse/Ines - spårare/Upptäckare Lördag<br/>
+                Alexander - spårare Fre-sön 
+              </td>
+              <td>Hjälpa till med vad som behövs</td>
+            </tr>
+          </table>
+          <p>    Valentin - spårare fredag 0900 Elton G - spårare
           Fre-sön Förälder tar själva kontakt med resp avdelning</p>
             6- Transport
           kanoter söndag 2 släp Hans öppet släp står kvar 2 bilar Frans spårare
