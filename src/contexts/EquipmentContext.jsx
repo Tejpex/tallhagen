@@ -9,18 +9,21 @@ const list = [
     name: "Sovsäck",
     done: false,
     category: "Sova",
+    hike: true
   },
   {
     id: 2,
     name: "Liggunderlag",
     done: false,
     category: "Sova",
+    hike: true
   },
   {
     id: 3,
     name: "Pyamas eller liknande",
     done: false,
     category: "Sova",
+    hike: true
   },
   //Extra-sov (1-10)
   {
@@ -34,6 +37,7 @@ const list = [
     name: "Sovsäckslakan",
     done: false,
     category: "Extra-sov",
+    hike: true
   },
   {
     id: 6,
@@ -47,60 +51,70 @@ const list = [
     name: "Scoutskjorta (om du har)",
     done: false,
     category: "Kläder",
+    hike: true
   },
   {
     id: 11,
     name: "Scouthalsduk + Sölja (om du har)",
     done: false,
     category: "Kläder",
+    hike: true
   },
   {
     id: 12,
     name: "Underkläder (Kalsonger/Trosor + ev. BH)",
     done: false,
     category: "Kläder",
+    hike: true
   },
   {
     id: 13,
     name: "Strumpor",
     done: false,
     category: "Kläder",
+    hike: true
   },
   {
     id: 14,
     name: "Byxor",
     done: false,
     category: "Kläder",
+    hike: true
   },
   {
     id: 15,
     name: "T-shirts/ Linnen eller liknande",
     done: false,
     category: "Kläder",
+    hike: true
   },
   {
     id: 16,
     name: "Tjockare tröjor",
     done: false,
     category: "Kläder",
+    hike: true
   },
   {
     id: 17,
     name: "Jacka efter årstid",
     done: false,
     category: "Kläder",
+    hike: true
   },
   {
     id: 18,
     name: "Regnjacka",
     done: false,
     category: "Kläder",
+    hike: true
   },
   {
     id: 19,
     name: "Regnbyxor",
     done: false,
     category: "Kläder",
+    hike: true
   },
   //Extra-kläder (10-29)
   {
@@ -108,12 +122,14 @@ const list = [
     name: "Vantar",
     done: false,
     category: "Extra-kläder",
+    hike: true
   },
   {
     id: 21,
     name: "Mössa",
     done: false,
     category: "Extra-kläder",
+    hike: true
   },
   {
     id: 22,
@@ -126,12 +142,14 @@ const list = [
     name: "Långkalsonger/underställ",
     done: false,
     category: "Extra-kläder",
+    hike: true
   },
   {
     id: 24,
     name: "Raggsockar",
     done: false,
     category: "Extra-kläder",
+    hike: true
   },
   //Äta 30-39
   {
@@ -139,36 +157,42 @@ const list = [
     name: "Kåsa/mugg",
     done: false,
     category: "Äta",
+    hike: true
   },
   {
     id: 31,
     name: "Djup tallrik",
     done: false,
     category: "Äta",
+    hike: true
   },
   {
     id: 32,
     name: "Bestick",
     done: false,
     category: "Äta",
+    hike: true
   },
   {
     id: 33,
     name: "Diskhandduk",
     done: false,
     category: "Äta",
+    hike: true
   },
   {
     id: 34,
     name: "Vattenflaska med vatten",
     done: false,
     category: "Äta",
+    hike: true
   },
   {
     id: 35,
     name: "Påse att förvara dina matsaker i",
     done: false,
     category: "Äta",
+    hike: true
   },
   //Hygien 40-59
   {
@@ -176,66 +200,77 @@ const list = [
     name: "Tandborste",
     done: false,
     category: "Hygien",
+    hike: true
   },
   {
     id: 41,
     name: "Tandkräm",
     done: false,
     category: "Hygien",
+    hike: true
   },
   {
     id: 42,
     name: "Kam/Hårborste",
     done: false,
     category: "Hygien",
+    hike: true
   },
   {
     id: 43,
     name: "Tvål",
     done: false,
     category: "Hygien",
+    hike: true
   },
   {
     id: 44,
     name: "Liten handduk",
     done: false,
     category: "Hygien",
+    hike: true
   },
   {
     id: 45,
     name: "Mediciner",
     done: false,
     category: "Vid behov",
+    hike: true
   },
   {
     id: 46,
     name: "Deodorant",
     done: false,
     category: "Vid behov",
+    hike: true
   },
   {
     id: 47,
     name: "Hudlotion",
     done: false,
     category: "Vid behov",
+    hike: true
   },
   {
     id: 48,
     name: "Trosskydd/Mensskydd",
     done: false,
     category: "Vid behov",
+    hike: true
   },
   {
     id: 49,
     name: "Hårsnoddar/-spännen",
     done: false,
     category: "Vid behov",
+    hike: true
   },
   {
     id: 50,
     name: "Skavsårsplåster",
     done: false,
     category: "Vid behov",
+    hike: true
   },
   //Övrigt 60-69
   {
@@ -249,6 +284,7 @@ const list = [
     name: "Kniv (om du har knivbevis)",
     done: false,
     category: "Övrigt",
+    hike: true
   },
   //Om du vill 70-79
   {
@@ -256,12 +292,14 @@ const list = [
     name: "Ficklampa",
     done: false,
     category: "Om du vill",
+    hike: true
   },
   {
     id: 71,
     name: "Kamera",
     done: false,
     category: "Om du vill",
+    hike: true
   },
   {
     id: 72,
@@ -286,6 +324,7 @@ const list = [
     name: "Godis",
     done: false,
     category: "Om du vill",
+    hike: true
   },
   //Sommarsaker 80-89
   {
@@ -293,6 +332,7 @@ const list = [
     name: "Shorts eller Kjol",
     done: false,
     category: "Sommarsaker",
+    hike: true
   },
   {
     id: 81,
@@ -317,6 +357,7 @@ const list = [
     name: "Solkräm",
     done: false,
     category: "Sommarsaker",
+    hike: true
   },
   {
     id: 85,
@@ -336,6 +377,7 @@ const list = [
     name: "Kängor/skor att leka ute i, som passar årstiden",
     done: false,
     category: "Skor",
+    hike: true
   },
   {
     id: 91,
@@ -346,9 +388,10 @@ const list = [
   //Väskor 100-109 Packa i: Stor ryggsäck/Bag
   {
     id: 100,
-    name: "Stor ryggsäck/Bag",
+    name: "Stor ryggsäck",
     done: false,
     category: "Väskor",
+    hike: true
   },
   {
     id: 101,
