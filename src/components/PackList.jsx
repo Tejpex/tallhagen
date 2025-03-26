@@ -5,8 +5,9 @@ import { useEquipment } from "../contexts/EquipmentContext"
 
 export const PackList = () => {
   const { equipment, completeAll } = useEquipment()
+  const itemsToPack = equipment.filter((item) => item.done === false)
 
-  if (equipment.filter((item) => item.done === false).length === 0) {
+  if (itemsToPack.length === 0) {
     return (
       <div className="info-box">
         <h2>Packning</h2>
@@ -34,42 +35,42 @@ export const PackList = () => {
         <h3>Här är en packlista som du kan följa:</h3>
         <p className="site-info">Du kan markera sakerna allt eftersom du packar dem. Möjligheten finns också att ta bort och lägga till saker för att göra listan personlig. Dina ändringar sparas dock inte. Vill du göra det behöver du skriva ut listan.</p>
         <h4>Sova</h4>
-        {equipment
-          .filter((item) => item.done === false && item.category === "Sova")
+        {itemsToPack
+          .filter((item) => item.hike === true && item.category === "Sova")
           .map((item) => (
             <Item key={item.id} item={item} />
           ))}
         <h4>Om du behöver</h4>
-        {equipment
+        {itemsToPack
           .filter(
-            (item) => item.done === false && item.category === "Extra-sov"
+            (item) => item.hike === true && item.category === "Extra-sov"
           )
           .map((item) => (
             <Item key={item.id} item={item} />
           ))}
         <h4>Kläder</h4>
         <p>Ha gärna på dig scoutskjorta när vi reser till lägret.</p>
-        {equipment
-          .filter((item) => item.done === false && item.category === "Kläder")
+        {itemsToPack
+          .filter((item) => item.hike === true && item.category === "Kläder")
           .map((item) => (
             <Item key={item.id} item={item} />
           ))}
         <h4>Om det är kallt (tänk även på temperaturen på kvällar/nätter)</h4>
-        {equipment
+        {itemsToPack
           .filter(
-            (item) => item.done === false && item.category === "Extra-kläder"
+            (item) => item.hike === true && item.category === "Extra-kläder"
           )
           .map((item) => (
             <Item key={item.id} item={item} />
           ))}
         <h4>Skor</h4>
-        {equipment
-          .filter((item) => item.done === false && item.category === "Skor")
+        {itemsToPack
+          .filter((item) => item.hike === true && item.category === "Skor")
           .map((item) => (
             <Item key={item.id} item={item} />
           ))}
-        {equipment.filter(
-          (item) => item.done === false && item.category === "Skor"
+        {itemsToPack.filter(
+          (item) => item.hike === true && item.category === "Skor"
         ).length > 0 && (
           <p>
             Du måste kunna gå en längre sträcka utan att bli blöt om fötterna
@@ -79,64 +80,64 @@ export const PackList = () => {
           </p>
         )}
         <h4>Matsaker</h4>
-        {equipment
-          .filter((item) => item.done === false && item.category === "Äta")
+        {itemsToPack
+          .filter((item) => item.hike === true && item.category === "Äta")
           .map((item) => (
             <Item key={item.id} item={item} />
           ))}
         <h4>Hygien</h4>
-        {equipment
-          .filter((item) => item.done === false && item.category === "Hygien")
+        {itemsToPack
+          .filter((item) => item.hike === true && item.category === "Hygien")
           .map((item) => (
             <Item key={item.id} item={item} />
           ))}
         <h4>Vid behov</h4>
-        {equipment
+        {itemsToPack
           .filter(
-            (item) => item.done === false && item.category === "Vid behov"
+            (item) => item.hike === true && item.category === "Vid behov"
           )
           .map((item) => (
             <Item key={item.id} item={item} />
           ))}
         <h4>Övrigt</h4>
-        {equipment
-          .filter((item) => item.done === false && item.category === "Övrigt")
+        {itemsToPack
+          .filter((item) => item.hike === true && item.category === "Övrigt")
           .map((item) => (
             <Item key={item.id} item={item} />
           ))}
         <h4>Om du vill</h4>
-        {equipment
+        {itemsToPack
           .filter(
-            (item) => item.done === false && item.category === "Om du vill"
+            (item) => item.hike === true && item.category === "Om du vill"
           )
           .map((item) => (
             <Item key={item.id} item={item} />
           ))}
         <p>Tänk på att elektronisk utrustning är känslig för väder och vind, och att det är svårt att hitta ett eluttag i naturen. Om en scout vill ringa hem, kan de låna en telefon av oss ledare. Vårdnadshavare kan också ringa till en ledare om de vill säga något till sin scout.</p>
         <h4>Eftersom lägret är på sommaren 🌞</h4>
-        {equipment
+        {itemsToPack
           .filter(
-            (item) => item.done === false && item.category === "Sommarsaker"
+            (item) => item.hike === true && item.category === "Sommarsaker"
           )
           .map((item) => (
             <Item key={item.id} item={item} />
           ))}
-        {equipment.filter(
-          (item) => item.done === false && item.category === "My own"
+        {itemsToPack.filter(
+          (item) => item.category === "My own"
         ).length > 0 && <h4>Mina egna saker</h4>}
-        {equipment
-          .filter((item) => item.done === false && item.category === "My own")
+        {itemsToPack
+          .filter((item) => item.category === "My own")
           .map((item) => (
             <Item key={item.id} item={item} />
           ))}
         <h4>Packa i</h4>
-        {equipment
-          .filter((item) => item.done === false && item.category === "Väskor")
+        {itemsToPack
+          .filter((item) => item.hike === true && item.category === "Väskor")
           .map((item) => (
             <Item key={item.id} item={item} />
           ))}
-        {equipment.filter(
-          (item) => item.done === false && item.category === "Väskor"
+        {itemsToPack.filter(
+          (item) => item.hike === true && item.category === "Väskor"
         ).length > 0 && (
           <p>
             Oftast gör vi dagsutfärder och då måste alla ha en liten ryggsäck med
