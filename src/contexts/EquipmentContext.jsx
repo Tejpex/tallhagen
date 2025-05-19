@@ -37,7 +37,7 @@ const list = [
     name: "Sovsäckslakan",
     done: false,
     category: "Extra-sov",
-    hike: true
+    hike: false
   },
   {
     id: 6,
@@ -182,7 +182,7 @@ const list = [
   },
   {
     id: 34,
-    name: "Vattenflaska med vatten",
+    name: "Vattenflaska med vatten - minst 3 liter",
     done: false,
     category: "Äta",
     hike: true
@@ -221,7 +221,7 @@ const list = [
     name: "Tvål",
     done: false,
     category: "Hygien",
-    hike: true
+    hike: false
   },
   {
     id: 44,
@@ -299,7 +299,7 @@ const list = [
     name: "Kamera",
     done: false,
     category: "Om du vill",
-    hike: true
+    hike: false
   },
   {
     id: 72,
@@ -326,6 +326,20 @@ const list = [
     category: "Om du vill",
     hike: true
   },
+  {
+    id: 76,
+    name: "Mobiltelefon",
+    done: false,
+    category: "Om du vill",
+    hike: true
+  },
+  {
+    id: 77,
+    name: "Powerbank",
+    done: false,
+    category: "Om du vill",
+    hike: true
+  },
   //Sommarsaker 80-89
   {
     id: 80,
@@ -345,12 +359,14 @@ const list = [
     name: "Solhatt/keps",
     done: false,
     category: "Sommarsaker",
+    hike: true
   },
   {
     id: 83,
     name: "Myggmedel",
     done: false,
     category: "Sommarsaker",
+    hike: true
   },
   {
     id: 84,
