@@ -4,7 +4,7 @@ import { useEquipment } from "../contexts/EquipmentContext"
 //import IceCream from "/ice-cream.png"
 
 export const PackList = () => {
-  const isAHike = false
+  const isAHike = true
   const { equipment, completeAll } = useEquipment()
   const itemsToPack = equipment.filter((item) => {
     if (item.done === true) return false
